@@ -456,6 +456,28 @@ NOW PLAYING BAR
   background: var(--backdrop) !important;
 }
 
+/* Theme DJ X Icon in now playing bar */
+.vOIOYNxCLYIrEIrQ5zrF {
+  background: var(--background-tinted-base) !important;
+  outline: var(--background-tinted-base) solid 2px !important;
+}
+.vOIOYNxCLYIrEIrQ5zrF:hover {
+  background: var(--background-tinted-highlight) !important;
+}
+.vOIOYNxCLYIrEIrQ5zrF:active {
+  background: var(--background-tinted-press) !important;
+}
+
+.vOIOYNxCLYIrEIrQ5zrF div svg {
+  color: var(--spice-accent) !important;
+}
+
+/* Don't show inner circle hover color bc it'll affect opacity of outer circle */
+.vOIOYNxCLYIrEIrQ5zrF .CaS42EYhD6e3VlaiqKaJ,
+.vOIOYNxCLYIrEIrQ5zrF .CaS42EYhD6e3VlaiqKaJ:hover {
+  background: transparent !important;
+}
+
 /*-----
 SIDEBAR
 ------*/
@@ -533,6 +555,11 @@ SIDEBAR
   border-radius: var(--button-border);
   padding: 16px;
   box-shadow: 0px 2px 10px 2px rgb(0 0 0 / 10%);
+}
+
+/* Hide "up next" DJ X tinted background in sidebar */
+.main-nowPlayingView-mainWrapper.TjX06ItOHm0J21btzLaj {
+    background: none;
 }
 
 .Button-sc-y0gtbx-0 {
