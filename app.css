@@ -346,13 +346,22 @@ NOW PLAYING BAR
   margin-right: 16px;
 }
 
-.main-coverSlotCollapsed-container {
+/* Thumbnail (album art) */
+.main-coverSlotCollapsed-container:has(#VideoPlayerNpb_ReactPortal:empty) {
   border-radius: 4px !important;
   transform: scale(1.2) !important;
   margin-right: 10px;
   margin-left: 10px;
   box-shadow: -2px 1px 10px 3px rgb(0 0 0 / 20%);
   aspect-ratio: 1 / 1;
+}
+
+/* Thumbnail (podcast video) */
+.main-coverSlotCollapsed-container:not(:has(#VideoPlayerNpb_ReactPortal:empty)) {
+  transform: scale(1.15) !important;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5.5px;
 }
 
 .main-nowPlayingWidget-nowPlaying {
