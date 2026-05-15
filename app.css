@@ -2498,9 +2498,9 @@ ul > div[data-tippy-root],
 /* Right click context menu (indented container) */
 .main-contextMenu-menuItem > div {
   backdrop-filter: blur(25px);
-  clip-path: inset(
-    0 round var(--button-border)
-  ); /* so the stupid blur filter doesn't go outside of the border radius */
+  /* so the stupid blur filter doesn't go outside of the border radius: */
+  /* EDIT 5/15/26: removed as it hid the 2nd-depth "Add to playlist" context menu */
+  /*clip-path: inset(0 round var(--button-border));*/
 }
 
 /* Right click context menu (item) */
