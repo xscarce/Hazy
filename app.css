@@ -779,8 +779,19 @@ PLAYLIST VIEW
   backdrop-filter: blur(8px) !important;
 }
 
+.main-trackList-trackListRow,
+[data-testid="tracklist-row"] {
+  --background-selected-row: transparent !important;
+  --background-selected: transparent !important;
+  --background-highlight: transparent !important;
+  --background-press: transparent !important;
+  --background-elevation-selected-hover: transparent !important;
+}
+
 .main-trackList-trackListRow:focus-within,
-.main-trackList-trackListRow:hover {
+.main-trackList-trackListRow:hover,
+[data-testid="tracklist-row"]:hover,
+[data-testid="tracklist-row"]:focus-within {
   background-color: transparent !important;
 }
 
@@ -788,14 +799,29 @@ PLAYLIST VIEW
   background: none !important;
 }
 
-.main-trackList-selected,
 .main-rootlist-wrapper div[role="presentation"] div[role="row"]:hover {
   background-color: hsla(0, 0%, 100%, 0.1);
   border-radius: var(--button-border);
 }
 
+.main-trackList-trackListRow.main-trackList-selected,
+.main-trackList-trackListRow.main-trackList-selected:hover,
+.main-trackList-trackListRow.main-trackList-selected:focus-within,
+.main-trackList-trackListRow.main-trackList-active,
+.main-trackList-trackListRow.main-trackList-active:hover,
+.main-trackList-trackListRow.main-trackList-active:focus-within,
+.main-trackList-trackListRow:active,
+.main-trackList-trackListRow:focus,
+[data-testid="tracklist-row"],
+[data-testid="tracklist-row"]:hover,
+[data-testid="tracklist-row"]:focus,
+[data-testid="tracklist-row"]:focus-within,
+[data-testid="tracklist-row"]:active,
+[data-testid="tracklist-row"][aria-selected="true"],
+[data-testid="tracklist-row"][aria-selected="true"]:hover,
+[data-testid="tracklist-row"][aria-selected="true"]:focus-within,
 .main-trackList-selected {
-  background-color: hsla(0, 0%, 100%, 0.2) !important;
+  background-color: transparent !important;
 }
 
 .main-trackList-rowSectionStart > img {

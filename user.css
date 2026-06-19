@@ -1,1 +1,47 @@
 @import url("https://cdn.jsdelivr.net/gh/astromations/hazy/app.css");
+
+/*max specificity  */
+:root body .main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-trackListRow,
+:root body [data-testid="tracklist-row"][data-testid="tracklist-row"][data-testid="tracklist-row"] {
+  --background-selected-row: transparent !important;
+  --background-selected: transparent !important;
+  --background-highlight: transparent !important;
+  --background-press: transparent !important;
+  --background-elevation-selected-hover: transparent !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+:root body .main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-trackListRow:hover,
+:root body .main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-trackListRow:focus-within,
+:root body .main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-trackListRow:active,
+:root body .main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-trackListRow:focus,
+:root body .main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-selected,
+:root body .main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-active,
+:root body [data-testid="tracklist-row"][data-testid="tracklist-row"][data-testid="tracklist-row"]:hover,
+:root body [data-testid="tracklist-row"][data-testid="tracklist-row"][data-testid="tracklist-row"]:focus-within,
+:root body [data-testid="tracklist-row"][data-testid="tracklist-row"][data-testid="tracklist-row"]:active,
+:root body [data-testid="tracklist-row"][data-testid="tracklist-row"][data-testid="tracklist-row"]:focus,
+:root body [data-testid="tracklist-row"][data-testid="tracklist-row"][data-testid="tracklist-row"][aria-selected="true"],
+:root body div[role="row"][role="row"][role="row"][aria-selected="true"],
+:root body div[role="row"][role="row"][role="row"]:hover {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+:root body div[role="row"][role="row"][role="row"][aria-selected="true"] > *,
+:root body [data-testid="tracklist-row"][data-testid="tracklist-row"][data-testid="tracklist-row"][aria-selected="true"] > *,
+:root body .main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-selected > * {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+:root body div[role="row"][role="row"][role="row"][aria-selected="true"]::before,
+:root body div[role="row"][role="row"][role="row"][aria-selected="true"]::after,
+:root body [data-testid="tracklist-row"][data-testid="tracklist-row"][data-testid="tracklist-row"][aria-selected="true"]::before,
+:root body [data-testid="tracklist-row"][data-testid="tracklist-row"][data-testid="tracklist-row"][aria-selected="true"]::after,
+:root body .main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-selected::before,
+:root body .main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-trackListRow.main-trackList-selected::after {
+  background: transparent !important;
+  background-color: transparent !important;
+}
